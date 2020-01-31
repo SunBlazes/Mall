@@ -1,0 +1,63 @@
+@import url("./normalize.css");
+/* :root -> 获取元素html */
+:root {
+	--color-text: #666;
+	--color-high-text: #ff5777;
+	/* tint:着色 */
+	--color-tint: #ff8198;
+	--color-background: #fff;
+	--font-size: 14px;
+	--line-height: 1.5;
+}
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	background: var(--color-background);
+	width: 100vw;
+}
+
+a {
+	color: var(--color-text);
+	text-decoration: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix::after {
+	display: block;
+	content: '';
+	clear: both;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('~assets/iconfont/iconfont.eot');
+  src: url('~assets/iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('~assets/iconfont/iconfont.woff2') format('woff2'),
+      url('~assets/iconfont/iconfont.woff') format('woff'),
+      url('~assets/iconfont/iconfont.ttf') format('truetype'),
+      url('~assets/iconfont/iconfont.svg#iconfont') format('svg');
+}
