@@ -35,4 +35,6 @@
 </script>
 
 <style scoped="">
+	#main-tab-bar {
+	}
 </style>

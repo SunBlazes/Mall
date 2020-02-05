@@ -1,12 +1,11 @@
 <template>
-	<div class="scroll">
+	<div class="details-scroll">
 			<swiper :options="swiperOption" ref="mySwiper" v-if="swiperSlides.length>0">
 		    <swiper-slide v-for="(slide, index) in swiperSlides" :key="index">
 					<a :href="slide.link">
 						<img 
 							:src="slide.image" 
 							alt="" 
-							@load='loadImage' 
 							>
 					</a>
 				</swiper-slide>
@@ -20,7 +19,7 @@
 	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	
 	export default {
-		name: 'Scroll',
+		name: 'DetailsScroll',
 		components: {
 			swiper,
 			swiperSlide
@@ -32,12 +31,6 @@
 					return [];
 				}
 			},
-			imageHeight: {
-				type: String,
-				default() {
-					return '195px';
-				}
-			}
 		},
 		data() {
 			return {
@@ -63,14 +56,6 @@
 			}
 		},
 		methods: {
-			loadImage() {
-				this.$nextTick(() => {
-					if(!this.loadOnce) {
-						this.$bus.$emit('loadScrollImage');
-						this.loadOnce++;
-					}
-				})
-			},
 		},
 		activated() {
 			if (this.$refs['mySwiper']) {
@@ -86,10 +71,14 @@
 </script>
 
 <style scoped="">
-	.scroll{
+	.details-scroll{
 		width: 100%;
 	}
 	img {
 		width: 100%;
+	}
+	.swiper-container {
+		height: 270px;
+		/* margin-top: -60px; */
 	}
 </style>

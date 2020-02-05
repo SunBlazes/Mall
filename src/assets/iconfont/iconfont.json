@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "485763",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "681188",
+      "name": "后退",
+      "font_class": "houtui",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
       "icon_id": "689261",
       "name": "类目 品类 分类 类别.2",
       "font_class": "leimupinleifenleileibie2",
@@ -13,11 +27,32 @@
       "unicode_decimal": 59384
     },
     {
+      "icon_id": "782377",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "949557",
+      "name": "店铺",
+      "font_class": "dianpu",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
       "icon_id": "970736",
       "name": "购物车",
       "font_class": "gouwuche",
       "unicode": "e621",
       "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "975636",
+      "name": "勾",
+      "font_class": "gou",
+      "unicode": "e643",
+      "unicode_decimal": 58947
     },
     {
       "icon_id": "2594651",
@@ -32,6 +67,13 @@
       "font_class": "wode",
       "unicode": "e699",
       "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "10715454",
+      "name": "星",
+      "font_class": "xing",
+      "unicode": "e639",
+      "unicode_decimal": 58937
     }
   ]
 }

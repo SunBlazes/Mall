@@ -1,5 +1,5 @@
 <template>
-	<div class="rec-views">
+	<div class="rec-views" style="margin-top: 5px;">
 		<div>
 			<div v-for="(item, index) in recommends" :key='index'>
 				<a href="item.link">
@@ -31,7 +31,6 @@
 		display: flex;
 		text-align: center;
 		font-size: 14px;
-		margin-top: 5px;
 	}
 	.rec-views div:first-child div {
 		flex: 1;

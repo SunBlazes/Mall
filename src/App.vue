@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-		<keep-alive><router-view/></keep-alive>
-		<main-tab-bar></main-tab-bar>
+		<keep-alive>
+			<router-view v-if="$route.meta.keepAlive"/>
+		</keep-alive>
+		<router-view v-if="!$route.meta.keepAlive"/>
+		<main-tab-bar v-show="$route.path.indexOf('details')==-1" />
   </div>
 </template>
 

@@ -36,6 +36,7 @@
 		left: 0;
 		right: 0;
 		z-index: 999;
+		user-select: none;
 	}
 	.left, .right {
 		width: 60px;
